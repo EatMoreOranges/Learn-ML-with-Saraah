@@ -1,0 +1,7 @@
+Ordinal: The possible values for an ordinal variable are non-continuous but do have an underlying rank structure. An example of an ordinal variable would be one that classifies college students into one of four categories: Freshman, Sophomore, Junior, or Senior. These discrete categories have an underlying order.
+Nominal: A nominal variable is one that has no obvious underlying rank or order. Color is a good example. ‘Red’, ‘Blue’, ‘Green’ might as well be listed ‘Blue’, ‘Green’, ‘Red’, as they have no intrinsic properties that give them rank.
+
+
+
+Resources:
+feature selection - https://machinelearningmastery.com/an-introduction-to-feature-selection/
