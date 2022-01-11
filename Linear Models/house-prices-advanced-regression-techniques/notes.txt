@@ -5,3 +5,5 @@ Nominal: A nominal variable is one that has no obvious underlying rank or order.
 
 Resources:
 feature selection - https://machinelearningmastery.com/an-introduction-to-feature-selection/
+faeture correlation - https://towardsdatascience.com/understanding-feature-extraction-using-correlation-matrix-and-scatter-plots-6c19e968a60c
+
