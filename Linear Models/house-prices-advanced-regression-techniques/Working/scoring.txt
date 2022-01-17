@@ -1,3 +1,40 @@
-('training ', datetime.datetime(2022, 1, 12, 7, 19, 59, 871669), 0.7819950281603523)
-('training ', datetime.datetime(2022, 1, 12, 7, 20, 17, 189413), 0.7999764161049006)
-('training ', datetime.datetime(2022, 1, 12, 7, 20, 36, 546625), 0.8117643371954549)
+2022-01-13
+ Training Score 0.7606899729735005
+ Test Score 0.8345745429766379
+0.5
+ 
+2022-01-13
+ Training Score 0.7780714427852178
+ Test Score 0.8565613629921613
+0.3
+ 
+2022-01-13
+ Training Score 0.8009686727786927
+ Test Score 0.8651372442163969
+-0.3
+ 
+2022-01-16
+ Training Score 0.7877027282298023
+ Test Score 1.0
+-0.01
+ 
+2022-01-16
+ Training Score 0.7877027282298023
+ Test Score 0.8606745731943408
+-0.01
+ 
+2022-01-16
+ Training Score 0.7877027282298023
+ Test Score 0.8606745731943408
+ Corrilation Value -0.001
+ 
+2022-01-16
+ Training Score 0.8009686727786927
+ Test Score 0.8651372442163969
+ Corrilation Value -0.5
+ 
+2022-01-16
+ Training Score 0.8009481052313974
+ Test Score 0.8657039176283804
+ Corrilation Value -0.5
+ 
