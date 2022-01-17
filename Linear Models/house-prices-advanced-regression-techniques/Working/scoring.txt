@@ -38,3 +38,28 @@
  Test Score 0.8657039176283804
  Corrilation Value -0.5
  
+2022-01-16
+ Training Score 0.8009481052313976
+ Test Score 0.8657039176284216
+ Corrilation Value -7
+ 
+2022-01-16
+ Training Score 1.0
+ Test Score 1.0
+ Corrilation Value -0.5
+ 
+2022-01-16
+ Training Score 0.8009481052313976
+ Test Score 0.8657039176284216
+ Corrilation Value -0.5
+ 
+2022-01-16
+ Training Score 0.8009481052313976
+ Test Score 0.8657039176284216
+ Corrilation Value -0.5
+ 
+2022-01-17
+ Training Score 0.8009481052313976
+ Test Score 0.8657039176284216
+ Corrilation Value -0.5
+ 
