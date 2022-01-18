@@ -42,6 +42,7 @@ Alley: Type of alley access to property
        Grvl	Gravel
        Pave	Paved
        NA 	No alley access
+       ['?','Paved','Gravel']
 		
 LotShape: General shape of property
 
@@ -49,7 +50,8 @@ LotShape: General shape of property
        IR1	Slightly irregular
        IR2	Moderately Irregular
        IR3	Irregular
-       
+       [Reg,IR1,IR2,IR3]
+
 LandContour: Flatness of the property
 
        Lvl	Near Flat/Level	
@@ -77,6 +79,7 @@ LandSlope: Slope of property
        Gtl	Gentle slope
        Mod	Moderate Slope	
        Sev	Severe Slope
+       [Gtl,Mod,Sev]
 	
 Neighborhood: Physical locations within Ames city limits
 
@@ -256,6 +259,7 @@ ExterQual: Evaluates the quality of the material on the exterior
        TA	Average/Typical
        Fa	Fair
        Po	Poor
+       [Ex,Gd,TA,Fa,Po]
 		
 ExterCond: Evaluates the present condition of the material on the exterior
 		
@@ -264,6 +268,7 @@ ExterCond: Evaluates the present condition of the material on the exterior
        TA	Average/Typical
        Fa	Fair
        Po	Poor
+       [Ex,Gd,TA,Fa,Po]
 		
 Foundation: Type of foundation
 		
@@ -282,6 +287,7 @@ BsmtQual: Evaluates the height of the basement
        Fa	Fair (70-79 inches)
        Po	Poor (<70 inches
        NA	No Basement
+       [Ex,Gd,TA,Fa,Po,NA]
 		
 BsmtCond: Evaluates the general condition of the basement
 
@@ -291,6 +297,7 @@ BsmtCond: Evaluates the general condition of the basement
        Fa	Fair - dampness or some cracking or settling
        Po	Poor - Severe cracking, settling, or wetness
        NA	No Basement
+       [Ex,Gd,TA,Fa,Po,NA]
 	
 BsmtExposure: Refers to walkout or garden level walls
 
@@ -299,6 +306,7 @@ BsmtExposure: Refers to walkout or garden level walls
        Mn	Mimimum Exposure
        No	No Exposure
        NA	No Basement
+       [Gd,Av,Mn,No,NA]
 	
 BsmtFinType1: Rating of basement finished area
 
@@ -309,6 +317,7 @@ BsmtFinType1: Rating of basement finished area
        LwQ	Low Quality
        Unf	Unfinshed
        NA	No Basement
+       [GLQ,ALQ,BLQ,Rec,LwQ,Unf,NA]
 		
 BsmtFinSF1: Type 1 finished square feet
 
@@ -321,6 +330,7 @@ BsmtFinType2: Rating of basement finished area (if multiple types)
        LwQ	Low Quality
        Unf	Unfinshed
        NA	No Basement
+       [GLQ,ALQ,BLQ,Rec,LwQ,Unf,NA]
 
 BsmtFinSF2: Type 2 finished square feet
 
@@ -344,6 +354,7 @@ HeatingQC: Heating quality and condition
        TA	Average/Typical
        Fa	Fair
        Po	Poor
+       [Ex,Gd,TA,Fa,Po]
 		
 CentralAir: Central air conditioning
 
@@ -385,6 +396,7 @@ KitchenQual: Kitchen quality
        TA	Typical/Average
        Fa	Fair
        Po	Poor
+       [Ex,Gd,TA,Fa,Po]
        	
 TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
 
@@ -398,6 +410,7 @@ Functional: Home functionality (Assume typical unless deductions are warranted)
        Maj2	Major Deductions 2
        Sev	Severely Damaged
        Sal	Salvage only
+       [Typ,Min1,Min2,Mod,Maj1,Maj2,Sev,Sal]
 		
 Fireplaces: Number of fireplaces
 
@@ -409,6 +422,7 @@ FireplaceQu: Fireplace quality
        Fa	Fair - Prefabricated Fireplace in basement
        Po	Poor - Ben Franklin Stove
        NA	No Fireplace
+       [Ex,Gd,TA,Fa,Po,NA]
 		
 GarageType: Garage location
 		
@@ -428,6 +442,7 @@ GarageFinish: Interior finish of the garage
        RFn	Rough Finished	
        Unf	Unfinished
        NA	No Garage
+       [Fin,RFn,Unf,NA]
 		
 GarageCars: Size of garage in car capacity
 
@@ -441,6 +456,7 @@ GarageQual: Garage quality
        Fa	Fair
        Po	Poor
        NA	No Garage
+       [Ex,Gd,TA,Fa,Po,NA]
 		
 GarageCond: Garage condition
 
@@ -450,12 +466,14 @@ GarageCond: Garage condition
        Fa	Fair
        Po	Poor
        NA	No Garage
+       [Ex,Gd,TA,Fa,Po,NA]
 		
 PavedDrive: Paved driveway
 
        Y	Paved 
        P	Partial Pavement
        N	Dirt/Gravel
+       [Y,P,N]
 		
 WoodDeckSF: Wood deck area in square feet
 
@@ -476,6 +494,7 @@ PoolQC: Pool quality
        TA	Average/Typical
        Fa	Fair
        NA	No Pool
+       [Ex,Gd,TA,Fa,NA]
 		
 Fence: Fence quality
 		

@@ -10,3 +10,6 @@ faeture correlation - https://towardsdatascience.com/understanding-feature-extra
 
 feature Eng vs Feature Selection - https://innovation.alteryx.com/feature-engineering-vs-feature-selection/
 
+Ordinal & OneHotEncoding https://www.youtube.com/watch?v=0w78CHM_ubM
+One Hot encoding Walk Through - https://www.youtube.com/watch?v=InZ0n2knz1E
+Preprocessing and OneHotEncoding - https://www.youtube.com/watch?v=irHhDMbw3xo
