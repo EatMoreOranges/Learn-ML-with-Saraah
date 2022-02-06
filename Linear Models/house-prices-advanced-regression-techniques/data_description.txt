@@ -27,6 +27,7 @@ MSZoning: Identifies the general zoning classification of the sale.
        RL	Residential Low Density
        RP	Residential Low Density Park 
        RM	Residential Medium Density
+       ["A","C","FV","I","RH","RL","RP","RM"]
 	
 LotFrontage: Linear feet of street connected to property
 
@@ -36,6 +37,7 @@ Street: Type of road access to property
 
        Grvl	Gravel	
        Pave	Paved
+       ["Grvl","Pave"],
        	
 Alley: Type of alley access to property
 
@@ -58,17 +60,19 @@ LandContour: Flatness of the property
        Bnk	Banked - Quick and significant rise from street grade to building
        HLS	Hillside - Significant slope from side to side
        Low	Depression
+       ["Lvl","Bnk","HLS","Low"],
 		
 Utilities: Type of utilities available
 		
        AllPub	All public Utilities (E,G,W,& S)	
        NoSewr	Electricity, Gas, and Water (Septic Tank)
        NoSeWa	Electricity and Gas Only
-       ELO	Electricity only	
+       ELO	Electricity only
+       ["AllPub","NoSewr","NoSeWa","ELO"],	
 	
 LotConfig: Lot configuration
 
-       Inside	Inside lot
+       LotConfig	Inside lot
        Corner	Corner lot
        CulDSac	Cul-de-sac
        FR2	Frontage on 2 sides of property
@@ -249,6 +253,7 @@ MasVnrType: Masonry veneer type
        CBlock	Cinder Block
        None	None
        Stone	Stone
+       [BrkCmn,BrkFace,CBlock,notIncluded,Stone]
 	
 MasVnrArea: Masonry veneer area in square feet
 
@@ -346,6 +351,7 @@ Heating: Type of heating
        Grav	Gravity furnace	
        OthW	Hot water or steam heat other than gas
        Wall	Wall furnace
+       ["Floor","GasA","GasW","Grav","OthW","Wall"]
 		
 HeatingQC: Heating quality and condition
 
