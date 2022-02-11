@@ -1,25 +1,35 @@
-opt = [
-    ["A","C","FV","I","RH","RL","RP","RM"],
-    ["Grvl","Pave"],
-    ["Lvl","Bnk","HLS","Low"],
-    ["AllPub","NoSewr","NoSeWa","ELO"],
-    ["LotConfig","Corner","CulDSac","FR2","FR3"],
-    ["Blmngtn","Blueste","BrDale","BrkSide","ClearCr","CollgCr","Crawfor","Edwards","Gilbert","IDOTRR","MeadowV","Mitchel","Names","NoRidge","NPkVill","NridgHt","NWAmes","OldTown","SWISU","Sawyer","SawyerW","Somerst","StoneBr","Timber","Veenker"],
-    ["Artery","Feedr","Norm","RRNn","RRAn","PosN","PosA","RRNe","RRAe"],
-    ["Artery","Feedr","Norm","RRNn","RRAn","PosN","PosA","RRNe","RRAe"],
-    ["1Fam","2FmCon","Duplx","TwnhsE","TwnhsI"],
-    ["1Story","1.5Fin","1.5Unf","2Story","2.5Fin","2.5Unf","SFoyer","SLvl" ],
-    ["Flat","Gable","Gambrel","Hip","Mansard","Shed"],
-    ["ClyTile","CompShg","Membran","Metal","Roll","Tar&Grv","WdShake","WdShngl"],
-    ["AsbShng","AsphShn","BrkComm","BrkFace","CBlock","CemntBd","HdBoard","ImStucc","MetalSd","Other","Plywood","PreCast","Stone","Stucco","VinylSd","Wd Sdng","WdShing"],
-    ["AsbShng","AsphShn","BrkComm","BrkFace","CBlock","CemntBd","HdBoard","ImStucc","MetalSd","Other","Plywood","PreCast","Stone","Stucco","VinylSd","Wd Sdng","WdShing"],
-    ["BrkCmn","BrkFace","CBlock","notIncluded","Stone"],
-    ["BrkTil","CBlock","PConc","Slab","Stone","Wood"],
-    ["Floor","GasA","GasW","Grav","OthW","Wall"],
-    ["SBrk","FuseA","FuseF","FuseP","Mix"],
-    ["2Types","Attchd","Basment","BuiltIn","CarPort","Detchd","notIncluded"],
-    ["GdPrv","MnPrv","GdWo","MnWw","notIncluded"],
-    ["Elev","Gar2","Othr","Shed","TenC","notIncluded"],
-    ["WD","CWD","VWD","New","COD","Con","ConLw","ConLI","ConLD","Oth"],
-    ["Normal","Abnorml","AdjLand","Alloca","Family","Partial"]
-]
+    if state == "t":
+        #### for training the model
+        naMeanings = [
+            "LotFrontage","Alley","MasVnrType","BsmtQual","BsmtCond","BsmtExposure","BsmtFinType1","BsmtFinType2","FireplaceQu",
+            "GarageType","GarageYrBlt","GarageFinish","GarageQual","GarageCond","PoolQC","Fence","MiscFeature"] 
+        
+        for col in naMeanings:
+            if col == "LotFrontage":
+                df['LotFrontage'].fillna(value=df['LotFrontage'].mean(), inplace=True)
+            elif col == 'GarageYrBlt':
+                # df['GarageYrBlt'].fillna(value=0, inplace=True)
+                checks['GarageYrBlt'].fillna(value=checks['GarageYrBlt'].mean(), inplace=True)
+            else:
+                df[col].fillna("notIncluded", inplace=True)
+                # df[col].fillna(0, inplace=True)
+    
+        # df.dropna(axis=0, inplace = True) 
+        df["MasVnrArea"].fillna(value=df['MasVnrArea'].mean(), inplace=True)
+    else:
+        ### for predicting with the model
+        naMeanings = ["LotFrontage","Alley","MasVnrType","BsmtQual","BsmtCond","BsmtExposure","BsmtFinType1","BsmtFinType2","FireplaceQu",
+        "GarageType","GarageYrBlt","GarageFinish","GarageQual","GarageCond","PoolQC","Fence","MiscFeature"] 
+    
+        for col in naMeanings:
+            if col == "LotFrontage":
+                df['LotFrontage'].fillna(value=df['LotFrontage'].mean(), inplace=True)
+            elif col == 'GarageYrBlt':
+                # df['GarageYrBlt'].fillna(value=0, inplace=True)
+                checks['GarageYrBlt'].fillna(value=checks['GarageYrBlt'].mean(), inplace=True)
+            else:
+                df[col].fillna("notIncluded", inplace=True)
+                # df[col].fillna(0, inplace=True)
+
+        ### df.dropna(axis=0, inplace = True) 
+        df["MasVnrArea"].fillna(value=df['MasVnrArea'].mean(), inplace=True)

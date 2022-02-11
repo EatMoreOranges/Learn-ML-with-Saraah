@@ -63,3 +63,68 @@
  Test Score 0.8657039176284216
  Corrilation Value -0.5
  
+2022-02-05
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-05
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-06
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-06
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-06
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
+2022-02-09
+ Training Score 0.9202105437807533
+ Test Score 0.9128445880175158
+ Corrilation Value 0.5
+ 
